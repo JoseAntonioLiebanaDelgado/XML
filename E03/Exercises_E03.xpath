@@ -1,0 +1,46 @@
+Exercici 1:
+a) //book/title/text()
+b) //book[1]/title/text()
+c) //book/price/text()
+d) //book[price > 35]/title/text()
+e) //book[@category='CHILDREN']
+f.1) //book[price=30 and year=2005]
+f.2) //book[price=30][year=2005]
+g) //book[year=//book[title='Everyday Italian']/year]
+h) //book[@category=//book[title='XQuery Kick Start']/@category]/title/text()
+i) //book[title='XQuery Kick Start']/author[starts-with(.,'K')]
+j) //book/title[contains(.,'XM')]/text()
+
+g) Passos:
+//book[year=2005]
+//book[title='Everyday Italian']/year
+//book[year=//book[title='Everyday Italian']/year]
+
+h) Passos:
+//book[@category='xxx']/title/text()
+//book[title='XQuery Kick Start']/@category
+//book[@category=//book[title='XQuery Kick Start']/@category]/title/text()
+
+/
+
+Exercici 2:
+1) //cicles/especialitat/cicle/text()
+2) //cicles/especialitat/cicle[@grau='Mig']
+3) //notes/classe/alumne[@aprovat='NO']/nom
+4) count(//notes/classe[@nom='ASIX']/alumne[genere='Dona'])
+5) //notes/classe/alumne[@aprovat='NO' and contains(email, '@hotmail')]/nom
+6.1) //notes/classe[alumne/nota=10]/@nom
+6.2) //cicle[@id=//notes/classe[alumne/nota=10]/@nom]/text()
+7) count(//notes/classe[@nom='ASIX']/alumne[@aprovat='SI'])
+8) count(//notes/classe/alumne[@aprovat='SI']) * 100 div count(//notes/classe/alumne)
+
+Exercici 3:
+1) //poblacio[nom='Girona']/data[@dia='23-05-2018']/previsio[@hora='14:00']/estat
+2) //poblacio[nom='Salt']/data[@dia='22-05-2018']/pluja
+3.1) //poblacio[nom='Olot']/data[contains(previsio/estat, 'pluja')]/@dia
+3.2) //poblacio[nom='Olot']/data/previsio[contains(estat, 'pluja')]/../@dia
+4) //poblacio[data/previsio/graus=24 and data/previsio/@hora='08:00']/nom
+5.1) avg(//poblacio[comarca='Alt Empordà']/data/previsio/graus)
+5.2) sum(//poblacio[comarca='Alt Empordà']/data/previsio/graus) div count(//poblacio[comarca='Alt Empordà']/data/previsio/graus)
+
+

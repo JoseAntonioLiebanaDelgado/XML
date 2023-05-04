@@ -1,0 +1,42 @@
+<!-- Crea un fitxer RSS de la pàgina web www.sport.es o d'una altra pàgina web de notícies, amb almenys 3 notícies.
+
+Per a afegir una imatge posa el següent codi dins del tag <description>, amb la imatge corresponent:
+
+      <![CDATA[<img align="left" width="120" height="120" hspace="5" 
+ src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> -->
+
+ <rss version="2.0">
+    <channel>
+
+        <title>RSS --- Tutorial --- </title>
+        <link></link>
+        <description><![CDATA[<img align="left" width="120" height="120" hspace="5" 
+        src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ut fugit aliquid hic repellendus 
+        consequuntur iste aperiam illum. Enim quos saepe vel animi pariatur quibusdam autem incidunt impedit veritatis 
+        optio libero velit asperiores nostrum quo consequatur praesentium, vero, ipsa, cum ex dolorum omnis recusandae
+         cupiditate ipsum. Tempora, ducimus totam. </description>
+            <item>
+                <title>RSS Tutorial</title>
+                <link>http://www.w3schools.com/rss</link>
+                <description><![CDATA[<img align="left" width="120" height="120" hspace="5" src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ut fugit aliquid hic repellendus consequuntur iste aperiam illum. Enim quos saepe vel animi pariatur quibusdam autem incidunt impedit veritatis optio libero velit asperiores nostrum quo consequatur praesentium, vero, ipsa, cum ex dolorum omnis recusandae cupiditate ipsum. Tempora, ducimus totam. </description>
+                <category>News</category>
+                <category>Tutorial</category>
+                <pubDate>Fri, 28 Apr 2010</pubDate>
+            </item>
+                <title>RSS Tutorial</title>
+                <link>http://www.w3schools.com/rss</link>
+                <description><![CDATA[<img align="left" width="120" height="120" hspace="5" src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ut fugit aliquid hic repellendus consequuntur iste aperiam illum. Enim quos saepe vel animi pariatur quibusdam autem incidunt impedit veritatis optio libero velit asperiores nostrum quo consequatur praesentium, vero, ipsa, cum ex dolorum omnis recusandae cupiditate ipsum. Tempora, ducimus totam. </description>
+                <category>News</category>
+                <category>Tutorial</category>
+                <pubDate>Fri, 28 Apr 2010</pubDate>
+            <item>
+                <title>RSS Tutorial</title>
+                <link>http://www.w3schools.com/rss</link>
+                <description><![CDATA[<img align="left" width="120" height="120" hspace="5" src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ut fugit aliquid hic repellendus consequuntur iste aperiam illum. Enim quos saepe vel animi pariatur quibusdam autem incidunt impedit veritatis optio libero velit asperiores nostrum quo consequatur praesentium, vero, ipsa, cum ex dolorum omnis recusandae cupiditate ipsum. Tempora, ducimus totam. </description>
+                <category>News</category>
+                <category>Tutorial</category>
+                <pubDate>Fri, 28 Apr 2010</pubDate>
+            </item>
+    </channel>
+ </rss>

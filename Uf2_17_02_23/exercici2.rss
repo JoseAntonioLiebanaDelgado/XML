@@ -1,0 +1,31 @@
+<rss version="2.0">
+    <channel>
+        <title>W3Schools Home Page</title>
+        <link>http://www.w3schools.com</link>
+        <description>Free web building tutorials</description>
+        <item>
+            <title>RSS Tutorial</title>
+            <link>http://www.w3schools.com/rss</link>
+            <description><![CDATA[<img align="left" width="120" height="120" hspace="5" src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ut fugit aliquid hic repellendus consequuntur iste aperiam illum. Enim quos saepe vel animi pariatur quibusdam autem incidunt impedit veritatis optio libero velit asperiores nostrum quo consequatur praesentium, vero, ipsa, cum ex dolorum omnis recusandae cupiditate ipsum. Tempora, ducimus totam. </description>
+            <category>News</category>
+            <category>Tutorial</category>
+            <pubDate>Fri, 28 Apr 2010</pubDate>
+        </item>
+        <item>
+            <title>RSS Tutorial</title>
+            <link>http://www.w3schools.com/rss</link>
+            <description><![CDATA[<img align="left" width="120" height="120" hspace="5" src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et officia suscipit tenetur atque eligendi assumenda, enim dolor tempore nihil? Tempora atque nostrum aliquid aspernatur accusamus commodi quaerat, repudiandae tenetur facere! Commodi minima quos repellat facere eius, quis tenetur sint, modi laborum doloribus odit dolorem aliquid adipisci molestiae eveniet reprehenderit. </description>
+            <category>News</category>
+            <category>Tutorial</category>
+            <pubDate>Fri, 28 Apr 2010</pubDate>
+        </item>
+        <item>
+            <title>RSS Tutorial</title>
+            <link>http://www.w3schools.com/rss</link>
+            <description><![CDATA[<img align="left" width="120" height="120" hspace="5" src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"/>]]> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et officia suscipit tenetur atque eligendi assumenda, enim dolor tempore nihil? Tempora atque nostrum aliquid aspernatur accusamus commodi quaerat, repudiandae tenetur facere! Commodi minima quos repellat facere eius, quis tenetur sint, modi laborum doloribus odit dolorem aliquid adipisci molestiae eveniet reprehenderit. </description>
+            <category>News</category>
+            <category>Tutorial</category>
+            <pubDate>Fri, 28 Apr 2010</pubDate>
+        </item>
+    </channel>
+</rss>

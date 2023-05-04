@@ -1,0 +1,102 @@
+<!-- L'objectiu d'aquesta tasca és reflexionar sobre la manera d'emmagatzemar les dades de coses 
+concretes del món real.
+
+Pensa de quina manera es podria emmagatzemar la informació per a fer el seguiment dels 
+jugadors de futbol de La Lliga en un document XML.
+
+Ha d'haver-hi informació de:
+
+Les seves dades personals: nom i cognoms, adreça, telèfon i data de naixement.
+Dades de les temporades que ha jugat: any, equip i dorsal.
+En cada jornada de cada temporada que ha jugat, dades del seu rendiment: els minuts que 
+ha jugat i els gols que ha fet. (Podem assumir que un jugador només participa amb un equip 
+durant tota una temporada).
+Escriu un document XML ben format on tingui informació d'almenys 2 jugadors en almenys 2 
+jornades de la lliga 21-22 i 2 jornades de la lliga 22-23. -->
+
+<!-- DUDAS: -->
+<!-- Donde puedo comprobar si el ejercicio esta bien? -->
+<!-- Aqui no haria falta hacer la 2 temporada, no la pide -->
+
+<?xml version=“1.0” encoding=“UTF-8”?>
+
+<lliga>
+    <Jugador nif="33355783H">
+        <Name>Juan</Name>
+        <Surname1>Martinez</Surname1>
+        <Surname2>Perez</Surname2>
+        <Phone>670253697</Phone>
+        <Direction>Carrer Tacit, Terrassa</Direction>
+        <BirthDate>3-10-1990</BirthDate>
+        <temporadas>
+            <temporada>  <!-- <Temporada Any= "1980"> /// <Temporada nif= "1"> -->
+                <any>1990</any>
+                <equip>FCB</equip>
+                <dorsal>2</dorsal>
+                    <jornadas>
+                        <jornada nif = "1">
+                            <minuts>6544</minuts>
+                            <gols>56</gols>
+                        </jornada>
+                        <jornada nif = "2">
+                            <minuts>5455</minuts>
+                            <gols>22</gols>
+                        </jornada>
+                    </jornadas>
+            </temporada>
+            <temporada>
+                <any>1990</any>
+                <equip>FCB</equip>
+                <dorsal>2</dorsal>
+                    <jornadas>
+                        <jornada nif = "1">
+                            <minuts>6544</minuts>
+                            <gols>56</gols>
+                        </jornada>
+                        <jornada nif = "2">
+                            <minuts>5455</minuts>
+                            <gols>22</gols>
+                        </jornada>
+                    </jornadas>
+            </temporada>
+        </temporadas>
+    <Jugador nif="33355783H">
+    <Name>Juan</Name>
+    <Surname1>Martinez</Surname1>
+    <Surname2>Perez</Surname2>
+    <Phone>670253697</Phone>
+    <Direction>Carrer Tacit, Terrassa</Direction>
+    <BirthDate>3-10-1990</BirthDate>
+    <temporadas>
+        <temporada>  <!-- <Temporada Any= "1980"> /// <Temporada nif= "1"> -->
+            <any>1990</any>
+            <equip>FCB</equip>
+            <dorsal>2</dorsal>
+                <jornadas>
+                    <jornada nif = "1">
+                        <minuts>6544</minuts>
+                        <gols>56</gols>
+                    </jornada>
+                    <jornada nif = "2">
+                        <minuts>5455</minuts>
+                        <gols>22</gols>
+                    </jornada>
+                </jornadas>
+        </temporada>
+        <temporada>
+            <any>1990</any>
+            <equip>FCB</equip>
+            <dorsal>2</dorsal>
+                <jornadas>
+                    <jornada nif = "1">
+                        <minuts>6544</minuts>
+                        <gols>56</gols>
+                    </jornada>
+                    <jornada nif = "2">
+                        <minuts>5455</minuts>
+                        <gols>22</gols>
+                    </jornada>
+                </jornadas>
+        </temporada>
+    </temporadas>
+</lliga>

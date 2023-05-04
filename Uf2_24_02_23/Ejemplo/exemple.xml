@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Class xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com exemple.xsd">
+  <Student nif="33355783H">
+    <Name>Juan</Name>
+    <Surname1>Martínez</Surname1>
+    <Surname2>Perez</Surname2>
+    <Phone>670253697</Phone>
+  </Student>
+  <!-- <Student nif="36955783G">
+    <Name>Leonor</Name>
+    <Surname1>Andres</Surname1>
+    <Surname2>Sanahuja</Surname2>
+    <Phone/>
+  </Student> -->
+</Class>

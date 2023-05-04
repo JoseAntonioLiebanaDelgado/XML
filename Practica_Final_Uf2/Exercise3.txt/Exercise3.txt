@@ -1,0 +1,181 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+a) Muestra todas las noticias que estén entre los meses de Noviembre y Febrero (incluidos los
+dos).
+
+//item[pubDate/@date > 20221100][pubDate/@date < 20230300]
+
+Result:
+
+<item>
+        <title>
+        <![CDATA[ Detenidas en Italia cuatro personas que presuntamente robaron un reloj de lujo a Charles Leclerc ]]>
+        </title>
+        <link>
+        <![CDATA[ https://www.elperiodico.com/es/mundial:f1/20230404/detenidas:italia:cuatro:personas:robar:reloj:leclerc:85621066 ]]>
+        </link> 
+        <description>
+        <![CDATA[ <img src="https://estaticos:cdn.elperiodico.com/clip/5a43b86a:877b:47b1:a614:4ffa9db58845_alta:libre:aspect:ratio_default_0.jpg"></p>Cuatro personas sospechosas de haber robado un reloj de lujo al piloto de Fórmula 1 Charles Leclerc (Ferrari) han sido detenidas este martes en Italia, informó la policía local.<p> ]]>
+        </description>
+        <category>Deportes</category>
+        <pubDate date="20230231">Mon, 31 Feb 2023</pubDate>
+        <author>El Periódico</author>
+    </item>
+<item>
+        <title>
+        <![CDATA[ Montecarlo se queda sin tenistas españoles por primera vez en 36 años ]]>
+        </title>
+        <link>
+        <![CDATA[ https://www.elperiodico.com/es/tenis/20230412/record:negativo:tenis:espanol:montecarlo:85918109 ]]>
+        </link> 
+        <description>
+        <![CDATA[ <img src="https://estaticos:cdn.elperiodico.com/clip/44690606:4ed9:49f9:951d:65072270dcf5_alta:libre:aspect:ratio_default_0.jpg"></p>Desde 1987 no sucedía que ningún tenista de la armada española alcance al menos los octavos de final del torneo.<p> ]]>
+        </description>
+        <category>Deportes</category>
+        <pubDate date="20230131">Mon, 31 Gen 2023</pubDate>
+        <author>El Periódico</author>   
+        </item>
+<item>
+        <title>
+        <![CDATA[ ¿Hay que declarar las criptomonedas en la declaración de la renta? ]]>
+        </title>
+        <link>
+        <![CDATA[ https://www.elperiodico.com/es/economia/declaracion:renta/20230412/declaracion:renta:cuando:incluir:criptomonedas:dv:85906394 ]]>
+        </link>
+        <description>
+        <![CDATA[ <img src="https://estaticos:cdn.elperiodico.com/clip/fb80e1db:4d3e:4828:ba18:3e56389b27ea_alta:libre:aspect:ratio_default_0.jpg"></p>El tema de la declaración de las criptomonedas en la declaración de la renta ha generado cierta controversia en los últimos años.<p> ]]>
+        </description>
+        <category>Economia</category>
+        <pubDate date="20221231">Mon, 31 Dic 2022</pubDate>
+        <author>El Periódico</author>   
+    </item>
+<item>
+        <title>
+        <![CDATA[ ¿Qué están haciendo los supermercados para contener la inflación? ]]>
+        </title>
+        <link>
+        <![CDATA[ https://www.elperiodico.com/es/consumo/20230412/haciendo:supermercados:contener:inflacion:84641148 ]]>
+        </link>
+        <description>
+        <![CDATA[ <img src="https://estaticos:cdn.elperiodico.com/clip/2b3fcdde:2db8:4790:97bf:3c71bed0aee6_media:libre:aspect:ratio_default_0.jpg"></p>Aproximadamente tres años después del primer confinamiento para prevenir los contagios de covid y a apenas meses de haber cumplido un año la invasión rusa a Ucrania, el precio de la alimentación sigue disparado. Contra todo pronóstico, la inflación alimentaria dio otra zancada en febrero, situándose un 16,6% por encima de donde estaba un año atrás. El porcentaje evidencia que la rebaja del IVA sobre toda una serie de productos de alimentación no ha sido suficiente, y ha echado más leña a un fuego que lleva días arreciando: el debate sobre si el Gobierno español tendría que llegar a un acuerdo con las grandes cadenas de distribución para que estas bajaran el precio de sus productos.<p> ]]>
+        </description>
+        <category>Economia</category>
+        <pubDate date="20221131">Mon, 31 Nov 2022</pubDate>
+        <author>El Periódico</author>   
+    </item>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+b) Muestra sólo el texto de las fechas de publicación de las noticias que sean del mismo año que
+la primera noticia del tema “Deportes”.
+
+//item[substring(pubDate/@date, 1, 4) = substring(//item[category='Deportes'][last()]/pubDate/@date, 1, 4)]/pubDate/text()
+
+Result:
+
+Text = Mon, 31 Mar 2023
+Text = Mon, 31 Feb 2023
+Text = Mon, 31 Gen 2023
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+c) Muestra los títulos (con los tags) de las noticias que tengan la misma categoría que la noticia
+más nueva.
+
+//item[category = (//item[not(pubDate < //item/pubDate)])[1]/category]/title
+
+Result:
+
+<title>
+        <![CDATA[ Marc Márquez se perderá también el GP de EEUU de este fin de semana ]]>
+        </title>
+<title>
+        <![CDATA[ Detenidas en Italia cuatro personas que presuntamente robaron un reloj de lujo a Charles Leclerc ]]>
+        </title>
+<title>
+        <![CDATA[ Montecarlo se queda sin tenistas españoles por primera vez en 36 años ]]>
+        </title>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+d) Muestra los títulos y los links (ambos con los tags) de las noticias con imágenes dentro de la
+descripción.
+
+//item[contains(description, '<img')]/title | //item/link
+
+Result:
+
+<title>
+        <![CDATA[ Marc Márquez se perderá también el GP de EEUU de este fin de semana ]]>
+        </title>
+<title>
+        <![CDATA[ Detenidas en Italia cuatro personas que presuntamente robaron un reloj de lujo a Charles Leclerc ]]>
+        </title>
+<title>
+        <![CDATA[ Montecarlo se queda sin tenistas españoles por primera vez en 36 años ]]>
+        </title>
+<title>
+        <![CDATA[ ¿Hay que declarar las criptomonedas en la declaración de la renta? ]]>
+        </title>
+<title>
+        <![CDATA[ ¿Qué están haciendo los supermercados para contener la inflación? ]]>
+        </title>
+<title>
+        <![CDATA[ Italia da de plazo a ChatGPT hasta el 30 de abril para revisar gestión de datos ]]>
+        </title>
+<title>
+        <![CDATA[ Guía actual de plataformas (Netflix, Amazon, HBO...): ¿cuál es la que más te conviene? ]]>
+        </title>
+<title>
+        <![CDATA[ Nicole Kimpel, novia de Antonio Banderas, brilló en la alfombra roja de los Oscar con joyas de Rabat ]]>
+        </title>
+<title>
+        <![CDATA[ Crítica final de 'The last of us': las cosas bellas pero terribles que hacemos por amor ]]>
+        </title>
+<title>
+        <![CDATA[ Turull asegura que las municipales de mayo también van sobre la independencia ]]>
+        </title>
+<title>
+        <![CDATA[ Así están las encuestas de las elecciones generales en España 2023 ]]>
+        </title>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/motogp/20230411/marc:marquez:perdera:gp:eeuu:85875326 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/mundial:f1/20230404/detenidas:italia:cuatro:personas:robar:reloj:leclerc:85621066 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/tenis/20230412/record:negativo:tenis:espanol:montecarlo:85918109 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/economia/declaracion:renta/20230412/declaracion:renta:cuando:incluir:criptomonedas:dv:85906394 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/consumo/20230412/haciendo:supermercados:contener:inflacion:84641148 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/tecnologia/20230412/italia:da:plazo:chatgpt:30:85930002 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/series/20230301/guia:de:plataformas:netflix:hbo:max:skyshowtime:comparativa:precios:dv:83935739 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/gente/20230314/nicole:kimpel:joyas:rabat:novia:antonio:banderas:premios:oscar:84623700 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/series/20230313/critica:final:the:last:of:us:84576107 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/elecciones:catalunya/20230325/turull:asegura:elecciones:municipales:mayo:independencia:85160838 ]]>
+        </link>
+<link>
+        <![CDATA[ https://www.elperiodico.com/es/politica/20230330/encuestas:elecciones:generales:espana:sondeos:12274406 ]]>
+        </link>
+<link>
+        <![CDATA[ https://elecciones.elperiodico.com/resultados/autonomicas/2021/catalunya/ ]]>
+        </link>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+

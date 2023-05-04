@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lliga>
+    <Jugador nif="33355783H">
+        <Name>Juan</Name>
+        <Surname1>Martinez</Surname1>
+        <Surname2>Perez</Surname2>
+        <Phone>670253697</Phone>
+        <Direction>Carrer Tacit, Terrassa</Direction>
+        <BirthDate>3-10-1990</BirthDate>
+            <temporadas>
+                <Temporada nif= "1">
+                    <Any>2000</Any>
+                    <Equip>Futbol Club Barcelona</Equip>
+                    <Dorsal>8</Dorsal>
+                        <jornadas>
+                            <Jornada nif= "1">
+                                <Minuts>877</Minuts>
+                                <Gols>33</Gols>
+                            </Jornada>
+                            <Jornada nif= "2">
+                                <Minuts>691</Minuts>
+                                <Gols>18</Gols>
+                            </Jornada>
+                        </jornadas>
+                </Temporada>
+                <Temporada nif= "2">
+                    <Any>2012</Any>
+                    <Equip>Real Madrid</Equip>
+                    <Dorsal>15</Dorsal>
+                    <jornadas>
+                        <Jornada nif= "1">
+                            <Minuts>950</Minuts>
+                            <Gols>56</Gols>
+                        </Jornada>
+                        <Jornada nif= "2">
+                            <Minuts>1005</Minuts>
+                            <Gols>30</Gols>
+                        </Jornada>
+                    </jornadas>
+                </Temporada>
+            </temporadas>
+    </Jugador>
+    <Jugador nif="33000832H">
+        <Name>Perico</Name>
+        <Surname1>De los</Surname1>
+        <Surname2>Palotes</Surname2>
+        <Phone>670253337</Phone>
+        <Direction>Carrer Turo, Terrassa</Direction>
+        <BirthDate>3-10-2000</BirthDate>
+            <temporadas>
+                <Temporada Any= "1">
+                    <Any>2012</Any>
+                    <Equip>Real Betis Balonpie</Equip>
+                    <Dorsal>22</Dorsal>
+                        <jornadas>
+                            <Jornada nif= "1">
+                                <Minuts>2000</Minuts>
+                                <Gols>47</Gols>
+                            </Jornada>
+                            <Jornada nif= "2">
+                                <Minuts>1080</Minuts>
+                                <Gols>24</Gols>
+                            </Jornada>
+                        </jornadas>
+                </Temporada>
+                <Temporada nif= "2">
+                    <Any>2012</Any>
+                    <Equip>Real Madrid</Equip>
+                    <Dorsal>15</Dorsal>
+                    <jornadas>
+                        <Jornada nif= "1">
+                            <Minuts>820</Minuts>
+                            <Gols>12</Gols>
+                        </Jornada>
+                        <Jornada nif= "2">
+                            <Minuts>3000</Minuts>
+                            <Gols>37</Gols>
+                        </Jornada>
+                    </jornadas>
+                </Temporada>
+            </temporadas>
+    </Jugador>
+</Lliga>

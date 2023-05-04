@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com ex1.xsd">
+  <llibre>
+    <codi>1</codi>
+    <titol>Vientos de invierno</titol>
+    <editorial>abcd</editorial>
+    <edicio>2030</edicio>
+    <isbn>12434354-5454-6465</isbn>
+    <numPag>700</numPag>
+    <autor>George R.R. Martin</autor>
+  </llibre>
+  <llibre>
+    <codi>2</codi>
+    <titol>Vientos de invierno</titol>
+    <editorial>abcd</editorial>
+    <edicio>2030</edicio>
+    <isbn>12434354-5454-6465</isbn>
+    <numPag>700</numPag>
+    <autor>George R.R. Martin</autor>
+  </llibre>
+</biblioteca>
